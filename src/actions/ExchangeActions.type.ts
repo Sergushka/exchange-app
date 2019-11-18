@@ -1,12 +1,12 @@
 import {
   IGetExchangeRatesFailure,
   IGetExchangeRatesRequest,
-  IGetExchangeRatesSuccess
-} from "./IGetExchangeRates.interface";
+  IGetExchangeRatesSuccess,
+} from './IGetExchangeRates.interface'
 
 type ExchangeActions =
-  | IGetExchangeRatesRequest
-  | IGetExchangeRatesSuccess
-  | IGetExchangeRatesFailure;
+    | IGetExchangeRatesRequest
+    | IGetExchangeRatesSuccess
+    | IGetExchangeRatesFailure;
 
-export default ExchangeActions;
+export default ExchangeActions

@@ -1,11 +1,16 @@
 export default interface IStoreState {
-    currencies: IExchangeRates
+    state: IExchangeState
+}
+
+export interface IExchangeState {
+    currencies: IExchangeRates | {},
+    isFetching: boolean
 }
 
 export interface IExchangeRates {
-    disclaimer: string,
-    license: string,
-    timestamp: Date
-    base: string;
-    rates: { [key: string]: number };
+    disclaimer: string
+    license: string
+    timestamp: number
+    base: string
+    rates: { [key: string]: number }
 }

@@ -5,7 +5,7 @@ export default interface IRestServiceInterface {
 export interface IExchangeRatesServerResponse {
   disclaimer: string;
   license: string;
-  timestamp: Date;
+  timestamp: number;
   base: string;
   rates: { [key: string]: number };
 }

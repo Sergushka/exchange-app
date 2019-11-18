@@ -1,5 +1,5 @@
-import ExchangeActionTypes from "./ExchangeActionTypes.enum";
-import {IExchangeRatesServerResponse} from "../restService/IRestService.interface";
+import ExchangeActionTypes from './ExchangeActionTypes.enum'
+import { IExchangeRatesServerResponse } from '../restService/IRestService.interface'
 
 export interface IGetExchangeRatesRequest {
   type: ExchangeActionTypes.GET_EXCHANGE_RATES_REQUEST;

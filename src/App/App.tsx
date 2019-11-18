@@ -1,12 +1,12 @@
-import React from "react";
-import "./App.css";
+import React from 'react'
+import './App.css'
 
 const App: React.FC = () => {
-  return (
-    <div>
-      <button>Click me</button>
-    </div>
-  );
-};
+    return (
+        <div>
+            <button>Click me</button>
+        </div>
+    )
+}
 
-export default App;
+export default App

@@ -1,18 +1,40 @@
-import { Action, Reducer } from "redux";
+import { Reducer } from 'redux'
+import { IExchangeState } from '../store/IStore.interface'
+import ExchangeActions from '../actions/ExchangeActions.type'
+import ExchangeActionTypes from '../actions/ExchangeActionTypes.enum'
 
-const initialExchangeState = {
-  exchangeRates: [],
-  isFetching: false
-};
+const initialExchangeState: IExchangeState = {
+    currencies: {},
+    isFetching: false,
+}
 
-const ExchangeReducer: Reducer<{}, Action<any>> = (
-  state = initialExchangeState,
-  action
+const ExchangeReducer: Reducer<IExchangeState, ExchangeActions> = (
+    state = initialExchangeState,
+    action,
 ) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+    switch (action.type) {
+        case ExchangeActionTypes.GET_EXCHANGE_RATES_REQUEST: {
+            return {
+                ...state,
+                isFetching: action.isFetching,
+            }
+        }
+        case ExchangeActionTypes.GET_EXCHANGE_RATES_SUCCESS: {
+            return {
+                ...state,
+                currencies: action.currencies,
+                isFetching: action.isFetching,
+            }
+        }
+        case ExchangeActionTypes.GET_EXCHANGE_RATES_FAILURE: {
+            return {
+                ...state,
+                isFetching: action.isFetching,
+            }
+        }
+        default:
+            return state
+    }
+}
 
-export default ExchangeReducer;
+export default ExchangeReducer
