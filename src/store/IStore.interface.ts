@@ -3,7 +3,7 @@ export default interface IStoreState {
 }
 
 export interface IExchangeState {
-    currencies: IExchangeRates | {},
+    currencies?: IExchangeRates,
     isFetching: boolean
 }
 

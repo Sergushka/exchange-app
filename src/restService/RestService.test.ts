@@ -4,7 +4,7 @@ import { RestService } from './RestService'
 describe('get currency rates', () => {
   const restService = new RestService()
   const baseUrl =
-      'https://openexchangerates.org/api/latest.json?app_id=fd72932d27da49799dc4fb46285edfec&symbols=GBP,EUR,USD'
+      'https://openexchangerates.org/api/latest.json?app_id=fd72932d27da49799dc4fb46285edfec&symbols=GBP,EUR,USD,RUB'
 
   beforeEach(() => {
     axios.get = jest.fn()

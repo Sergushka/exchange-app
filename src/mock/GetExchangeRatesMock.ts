@@ -1,5 +1,7 @@
-const GetMockExchange = {
-    disclaimer: 'Usage subject to terms: https://openexchangerates.org/terms',
+import { IExchangeRatesServerResponse } from '../restService/IRestService.interface'
+
+const GetMockExchange: IExchangeRatesServerResponse = {
+    disclaimer: 'Usage subject to terms',
     license: 'https://openexchangerates.org/license',
     timestamp: 1574002823,
     base: 'USD',

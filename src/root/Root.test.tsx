@@ -8,7 +8,7 @@ describe('Root', () => {
   const store = configureStore()
   const wrapper = shallow(<Root store={store}/>)
 
-  describe('renders', () => {
+    describe('renders correctly', () => {
     it('App', () => {
       const element = <App/>
       expect(wrapper.contains(element)).toEqual(true)

@@ -4,7 +4,7 @@ import ExchangeActions from '../actions/ExchangeActions.type'
 import ExchangeActionTypes from '../actions/ExchangeActionTypes.enum'
 
 const initialExchangeState: IExchangeState = {
-    currencies: {},
+    currencies: undefined,
     isFetching: false,
 }
 
