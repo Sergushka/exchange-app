@@ -54,6 +54,8 @@ body {
 
 .Form select {
 		font-family: inherit;
+		font-size: 12px;
+		height: 1.1rem;
 		margin-bottom: 0.5rem;
 		text-align: center;
 		text-align-last: center;
@@ -70,15 +72,10 @@ body {
 }
 
 .Swapper {
-		color: #223254;
+		color: #223254 !important;
 		text-transform: uppercase;
 		text-decoration: none;
-		background: #c8ccd4;
-		padding: 2px;
-		outline: none;
-		border-radius: 38%;
-		display: inline-flex;
-		transition: all 0.4s ease 0s;
+		background: transparent;
 }
 
 .Swapper:hover {
