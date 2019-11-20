@@ -4,6 +4,7 @@ import IStoreState, { IExchangeRates } from '../store/IStore.interface'
 import { getExchangeRates } from '../actions/ActionCreator'
 import { connect } from 'react-redux'
 import IRestServiceInterface from '../restService/IRestService.interface'
+import { Button, Container } from '@material-ui/core'
 
 interface IProps {
     getExchangeRate: () => Promise<IRestServiceInterface>,
@@ -136,7 +137,7 @@ export class ExchangeRates extends Component<IProps, IState> {
         const { currencies } = this.props
         const { baseCurrency, actualCurrency, baseValue, actualValue } = this.state
         return (
-            <div className={'Container'}>
+            <Container className={'Container'}>
                 <form className={'Form'}>
                     <select value={baseCurrency} onChange={(e) => this.handleBaseCurrencySelectChange(e)}>
                         {this.renderCurrencyOptions(currencies)}
@@ -148,7 +149,7 @@ export class ExchangeRates extends Component<IProps, IState> {
                            onChange={this.handleInputChange}
                            type="number"/>
                 </form>
-                <button className={'Swapper'} onClick={() => {
+                <Button className={'Swapper'} onClick={() => {
                     this.setState({
                         baseCurrency: actualCurrency,
                         actualCurrency: baseCurrency,
@@ -156,7 +157,7 @@ export class ExchangeRates extends Component<IProps, IState> {
                         actualValue: baseValue,
                     })
                 }}>Swap
-                </button>
+                </Button>
                 <span
                     className={'ConvertRate'}>1 {baseCurrency} ~ {this.calculateExchangeRate(baseCurrency, actualCurrency)} {actualCurrency}</span>
                 <form className={'Form'}>
@@ -170,7 +171,7 @@ export class ExchangeRates extends Component<IProps, IState> {
                            min={0}
                            type="number"/>
                 </form>
-            </div>
+            </Container>
         )
     }
 }
