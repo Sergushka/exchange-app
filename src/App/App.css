@@ -1,0 +1,93 @@
+* {
+		box-sizing: border-box
+}
+
+html, body {
+		height: 100%;
+}
+
+body {
+		display: grid;
+		padding: 0;
+		margin: 0;
+		font-family: Avenir, sans-serif;
+		-webkit-text-size-adjust: 100%;
+		-webkit-font-smoothing: antialiased
+}
+
+.Container {
+		width: 100%;
+		text-align: center;
+}
+
+.ConvertRate {
+		color: #223254;
+		font-family: inherit;
+		text-align: center;
+		font-size: 16px;
+}
+
+.Form {
+		display: flex;
+		margin: 0 auto 0.8rem;
+		align-items: center;
+		justify-content: center;
+		height: 2rem;
+		width: 100%;
+}
+
+.Form input {
+		margin: 1rem;
+		height: 1.2rem;
+		-webkit-appearance: none;
+		border: 0;
+		font-family: inherit;
+		text-align: right;
+		font-size: 16px;
+		outline: none;
+		font-weight: 500;
+		border-bottom: 2px solid #c8ccd4;
+		background: none;
+		border-radius: 0;
+		color: #223254;
+}
+
+.Form select {
+		font-family: inherit;
+		margin-bottom: 0.5rem;
+		text-align: center;
+		text-align-last: center;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: none;
+		border: none;
+		border-radius: 0;
+		color: black;
+		border-bottom: 2px solid #c8ccd4;
+		background: transparent;
+		padding: 0;
+}
+
+.Swapper {
+		color: #223254;
+		text-transform: uppercase;
+		text-decoration: none;
+		background: #c8ccd4;
+		padding: 2px;
+		outline: none;
+		border-radius: 38%;
+		display: inline-flex;
+		transition: all 0.4s ease 0s;
+}
+
+.Swapper:hover {
+		background: #c8ccd4;
+		color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+}
