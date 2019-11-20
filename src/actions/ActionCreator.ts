@@ -48,7 +48,7 @@ export const getExchangeRates: ActionCreator<ThunkAction<Promise<any>,
             .then(response => {
                 dispatch(getExchangeRatesSuccess(response.data))
             })
-            .catch(error => {
+            .catch(() => {
                 dispatch(getExchangeRatesFailure())
             })
     }
