@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/exchange-app/static/css/main.fa6b97c7.chunk.css",
+    "main.js": "/exchange-app/static/js/main.caf5c004.chunk.js",
+    "main.js.map": "/exchange-app/static/js/main.caf5c004.chunk.js.map",
+    "runtime-main.js": "/exchange-app/static/js/runtime-main.900b10db.js",
+    "runtime-main.js.map": "/exchange-app/static/js/runtime-main.900b10db.js.map",
+    "static/js/2.8ba5d986.chunk.js": "/exchange-app/static/js/2.8ba5d986.chunk.js",
+    "static/js/2.8ba5d986.chunk.js.map": "/exchange-app/static/js/2.8ba5d986.chunk.js.map",
+    "index.html": "/exchange-app/index.html",
+    "precache-manifest.005df8bb4b5a038b7ce489c6e1727ff9.js": "/exchange-app/precache-manifest.005df8bb4b5a038b7ce489c6e1727ff9.js",
+    "service-worker.js": "/exchange-app/service-worker.js",
+    "static/css/main.fa6b97c7.chunk.css.map": "/exchange-app/static/css/main.fa6b97c7.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.900b10db.js",
+    "static/js/2.8ba5d986.chunk.js",
+    "static/css/main.fa6b97c7.chunk.css",
+    "static/js/main.caf5c004.chunk.js"
+  ]
+}
