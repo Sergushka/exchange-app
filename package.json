@@ -16,7 +16,7 @@
     "test": "react-scripts test",
     "bundle": "webpack",
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
+    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
