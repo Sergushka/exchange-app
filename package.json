@@ -1,9 +1,10 @@
 {
   "name": "exchange-app",
-  "homepage": "https://Sergushka.github.io/exchange-app",
+  "homepage": "https://sergushka.github.io/exchange-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "heroku": "^7.35.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.1.3",
@@ -59,8 +60,8 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
-    "gh-pages": "^2.1.1",
     "enzyme-adapter-react-16": "^1.15.1",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "lodash": "^4.17.15",
